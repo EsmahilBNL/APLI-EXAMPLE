@@ -9,7 +9,7 @@ import sys
 #INITIAL CONFIGURATION
 reload(sys)
 sys.setdefaultencoding('utf-8')
-
+#
 address = 'https://addm.consolidacion.tesa/api/v1.0/data/search?query= <query to get>'token = {'Authorization': 'Bearer <Token>'}
 lista_datos = []
 
@@ -41,7 +41,8 @@ def getNext(address):
 contador = 0
 next_url = getNext(address)
 
-#We store the data in the list
+#Store the data in the list
+        #
 while next_url is not None:
         contador=contador+1
         print(contador)
